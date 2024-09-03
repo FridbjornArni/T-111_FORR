@@ -1,0 +1,4 @@
+import math
+y = float(input())
+s = 50*math.atan(y)
+prin(s)

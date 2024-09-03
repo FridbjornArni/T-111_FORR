@@ -1,0 +1,17 @@
+import random
+treyer = 0
+tal = random.randint(0,1000)
+while True:
+	tryer += 1
+	inp = int(input())
+
+	if inp == tal:
+		print("correct")
+		break 
+	elif tal > inp:
+		print("higher")
+	elif tal < inp:
+		print("lower")
+	elif tryer == 10:
+		break
+	tryer+=1
