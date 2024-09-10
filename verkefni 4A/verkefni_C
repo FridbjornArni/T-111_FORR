@@ -1,0 +1,20 @@
+def extracsinteger(x):
+	q = -1
+	strt = None
+	end = None
+	for z in x:
+		q+=1
+		try:
+			z=int(z)
+			strt = q if strt == None else strt
+		except:
+			end = q if strt != None else end
+			if end != None:
+				break	
+	if strt == None:
+		return int(-1)
+	else:
+		return int(x[int(strt):int(end)])
+
+inp = str(input())
+print(extracsinteger(inp))
