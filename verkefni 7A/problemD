@@ -1,0 +1,11 @@
+def is_prime(n):
+	if n in (1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71):
+		return True
+	return False
+
+def prime_sum(numbers_string):
+	numbers = [int(num) for num in numbers_string.strip().split(',')]
+	return sum([num for num in numbers if is_prime(num)])
+
+inp = input()
+print(prime_sum(inp))
