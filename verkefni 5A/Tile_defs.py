@@ -3,3 +3,5 @@ directions={1.1:['N'],1.2:['N','E','S'],1.3:['E','S'],2.1:['N'],2.2:['W','S'],2.
 for x, y in directions.items():
 	print(y)
 	print(x)
+
+	

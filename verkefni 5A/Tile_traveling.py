@@ -1,5 +1,7 @@
 # Fribbi
 # Tile_Traveling
+
+
 def move_input():
 	inp = str(input())
 	return inp.upper()
@@ -9,6 +11,8 @@ def get_possible_moves(dir, loc):
 			return y
 		else:
 			continue
+
+		
 def move_North(floatnum):
 	return round(float(floatnum)+0.1,1)
 def move_east(floatnum):
